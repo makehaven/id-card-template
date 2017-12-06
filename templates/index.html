@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>MakeHaven ID Badge Generator</title>
+  </head>
+  <body bgcolor=white>
+
+    <p>API usage:</p>
+    <p>curl -F "image=@image.jpg" -F "first=John" -F "last=Doe" http://badgegenerator.makehaven.org</p>
+
+    <hr>
+
+     <form action="#" enctype="multipart/form-data" method="post">
+        <p>
+         <label for="first">First name: </label>
+         <input type="text" id="first" name="first"><br>
+         <label for="lastn">Last name: </label>
+         <input type="text" id="last" name="last"><br>
+         <input id="image" name="image" type="file" />
+       </p>
+       <input type="submit" value="Generate">
+    </form>
+  </body>
+</html>

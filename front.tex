@@ -1,0 +1,29 @@
+\documentclass{letter}
+\pagestyle{empty}
+\usepackage[margin=0in]{geometry}
+\geometry{papersize={2.125in,3.37in}}
+\usepackage{graphicx}
+\usepackage{tikz}
+\renewcommand{\familydefault}{\sfdefault}
+
+\definecolor{orange}{cmyk}{0.28,1.0,1.0,0.3}
+
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=0.435in] at (current page.center){%
+    \includegraphics[height=2.5in]{photo.jpg}};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\tikz \fill [orange] (0in, 2.25in) rectangle ++(2.125in,0.87in);
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\node[overlay, white, align=center,font=\huge] at (1.0625in,-1.45in) {\textbf{FIRSTNAME}};
+\node[overlay, white, align=center,font=\large] at (1.0625in,-1.7in) {LASTNAME};
+\end{tikzpicture}
+
+
+\end{document}

@@ -1,0 +1,28 @@
+\documentclass{letter}
+\pagestyle{empty}
+\usepackage[margin=0in]{geometry}
+\geometry{papersize={5.16in,10.01in}}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=35.3mm,yshift=-135.7mm] at (current page.north west){%
+    \includegraphics[angle=0,scale=1.02]{front.pdf}};
+\end{tikzpicture}
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=35.3mm,yshift=-135.7mm] at (current page.north west){%
+    \includegraphics[angle=0,scale=1]{front.pdf}};
+\end{tikzpicture}
+
+
+
+\begin{tikzpicture}[remember picture,overlay]
+    \node[xshift=96.3mm,yshift=-135.7mm] at (current page.north west){%
+    \includegraphics[angle=270]{idcard_back.pdf}};
+\end{tikzpicture}
+
+
+
+\end{document}

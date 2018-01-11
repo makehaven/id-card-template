@@ -36,7 +36,7 @@ def upload():
 
     os.system('cp idcard_back.pdf {}'.format(tmp))
     os.system('cp idcard.tex {}'.format(tmp))
-    os.system('./generate.sh {}'.format(tmp))
+    os.system('cd {} && pdflatex front.tex && pdflatex front.tex && pdflatex idcard.tex && pdflatex idcard.tex'.format(tmp))
 
     return send_file(os.path.join(tmp, 'idcard.pdf'), 
     	as_attachment=True, 

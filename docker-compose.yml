@@ -1,0 +1,6 @@
+version: '3'
+services:
+  badgegenerator:
+    build: .
+    ports:
+     - "6780:6780"
